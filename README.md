@@ -1,2 +1,2 @@
 # polyspaces
-A dataset used for redirected walking simulation tests
+A dataset used for redirected walking simulation tests.
