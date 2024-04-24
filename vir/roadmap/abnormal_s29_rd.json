@@ -1,0 +1,4828 @@
+{
+  "name": "abnormal_s29",
+  "data": [
+    {
+      "id": 0,
+      "pos": [
+        907.524,
+        1413.205
+      ],
+      "loop_connect": 35,
+      "children_ids": [
+        85
+      ],
+      "father_ids": []
+    },
+    {
+      "id": 1,
+      "pos": [
+        985.083,
+        1448.236
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        89
+      ],
+      "father_ids": [
+        88
+      ]
+    },
+    {
+      "id": 2,
+      "pos": [
+        1082.41,
+        1473.17
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        93
+      ],
+      "father_ids": [
+        92
+      ]
+    },
+    {
+      "id": 3,
+      "pos": [
+        1167.572,
+        1463.774
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        96
+      ],
+      "father_ids": [
+        95
+      ]
+    },
+    {
+      "id": 4,
+      "pos": [
+        1224.041,
+        1447.886
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        98
+      ],
+      "father_ids": [
+        97
+      ]
+    },
+    {
+      "id": 5,
+      "pos": [
+        1262.222,
+        1434.525
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        99
+      ],
+      "father_ids": [
+        98
+      ]
+    },
+    {
+      "id": 6,
+      "pos": [
+        1295.63,
+        1418.538
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        100
+      ],
+      "father_ids": [
+        99
+      ]
+    },
+    {
+      "id": 7,
+      "pos": [
+        1270.007,
+        1313.826
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        104
+      ],
+      "father_ids": [
+        103
+      ]
+    },
+    {
+      "id": 8,
+      "pos": [
+        1224.471,
+        1244.923
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        107
+      ],
+      "father_ids": [
+        106
+      ]
+    },
+    {
+      "id": 9,
+      "pos": [
+        970.552,
+        982.087
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        121
+      ],
+      "father_ids": [
+        120
+      ]
+    },
+    {
+      "id": 10,
+      "pos": [
+        913.078,
+        939.598
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        123
+      ],
+      "father_ids": [
+        122
+      ]
+    },
+    {
+      "id": 11,
+      "pos": [
+        848.965,
+        916.008
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        125
+      ],
+      "father_ids": [
+        124
+      ]
+    },
+    {
+      "id": 12,
+      "pos": [
+        787.7,
+        901.033
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        127
+      ],
+      "father_ids": [
+        126
+      ]
+    },
+    {
+      "id": 13,
+      "pos": [
+        753.771,
+        891.681
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        128
+      ],
+      "father_ids": [
+        127
+      ]
+    },
+    {
+      "id": 14,
+      "pos": [
+        722.637,
+        881.41
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        86
+      ],
+      "father_ids": [
+        128
+      ]
+    },
+    {
+      "id": 15,
+      "pos": [
+        676.308,
+        865.032
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        21,
+        129
+      ],
+      "father_ids": [
+        86
+      ]
+    },
+    {
+      "id": 16,
+      "pos": [
+        693.72,
+        1050.849
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        137
+      ],
+      "father_ids": [
+        136
+      ]
+    },
+    {
+      "id": 17,
+      "pos": [
+        757.828,
+        1168.187
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        142
+      ],
+      "father_ids": [
+        141
+      ]
+    },
+    {
+      "id": 18,
+      "pos": [
+        834.335,
+        1252.883
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        146
+      ],
+      "father_ids": [
+        145
+      ]
+    },
+    {
+      "id": 19,
+      "pos": [
+        883.296,
+        1329.64
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        149
+      ],
+      "father_ids": [
+        148
+      ]
+    },
+    {
+      "id": 20,
+      "pos": [
+        907.524,
+        1413.205
+      ],
+      "loop_connect": 0,
+      "children_ids": [],
+      "father_ids": [
+        130
+      ]
+    },
+    {
+      "id": 21,
+      "pos": [
+        669.133,
+        850.221
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        22
+      ],
+      "father_ids": [
+        15
+      ]
+    },
+    {
+      "id": 22,
+      "pos": [
+        663.142,
+        836.995
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        151,
+        212
+      ],
+      "father_ids": [
+        21
+      ]
+    },
+    {
+      "id": 23,
+      "pos": [
+        614.636,
+        830.278
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        153
+      ],
+      "father_ids": [
+        151
+      ]
+    },
+    {
+      "id": 24,
+      "pos": [
+        574.82,
+        821.968
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        154
+      ],
+      "father_ids": [
+        153
+      ]
+    },
+    {
+      "id": 25,
+      "pos": [
+        323.575,
+        760.475
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        164
+      ],
+      "father_ids": [
+        163
+      ]
+    },
+    {
+      "id": 26,
+      "pos": [
+        262.061,
+        878.845
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        169
+      ],
+      "father_ids": [
+        168
+      ]
+    },
+    {
+      "id": 27,
+      "pos": [
+        244.936,
+        982.419
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        173
+      ],
+      "father_ids": [
+        172
+      ]
+    },
+    {
+      "id": 28,
+      "pos": [
+        244.936,
+        1343.799
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        187
+      ],
+      "father_ids": [
+        186
+      ]
+    },
+    {
+      "id": 29,
+      "pos": [
+        248.288,
+        1389.624
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        152
+      ],
+      "father_ids": [
+        187
+      ]
+    },
+    {
+      "id": 30,
+      "pos": [
+        256.721,
+        1429.72
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        188
+      ],
+      "father_ids": [
+        152
+      ]
+    },
+    {
+      "id": 31,
+      "pos": [
+        333.954,
+        1461.972
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        192
+      ],
+      "father_ids": [
+        191
+      ]
+    },
+    {
+      "id": 32,
+      "pos": [
+        401.534,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        194
+      ],
+      "father_ids": [
+        193
+      ]
+    },
+    {
+      "id": 33,
+      "pos": [
+        736.145,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        207
+      ],
+      "father_ids": [
+        206
+      ]
+    },
+    {
+      "id": 34,
+      "pos": [
+        827.547,
+        1454.526
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        210
+      ],
+      "father_ids": [
+        209
+      ]
+    },
+    {
+      "id": 35,
+      "pos": [
+        907.524,
+        1413.205
+      ],
+      "loop_connect": 0,
+      "children_ids": [],
+      "father_ids": [
+        189
+      ]
+    },
+    {
+      "id": 36,
+      "pos": [
+        674.005,
+        813.775
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        214
+      ],
+      "father_ids": [
+        212
+      ]
+    },
+    {
+      "id": 37,
+      "pos": [
+        709.694,
+        714.463
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        218
+      ],
+      "father_ids": [
+        217
+      ]
+    },
+    {
+      "id": 38,
+      "pos": [
+        724.097,
+        600.964
+      ],
+      "loop_connect": 78,
+      "children_ids": [
+        39
+      ],
+      "father_ids": [
+        213
+      ]
+    },
+    {
+      "id": 39,
+      "pos": [
+        723.473,
+        600.337
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        40
+      ],
+      "father_ids": [
+        38
+      ]
+    },
+    {
+      "id": 40,
+      "pos": [
+        722.761,
+        599.624
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        221
+      ],
+      "father_ids": [
+        39
+      ]
+    },
+    {
+      "id": 41,
+      "pos": [
+        682.607,
+        559.47
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        224
+      ],
+      "father_ids": [
+        223
+      ]
+    },
+    {
+      "id": 42,
+      "pos": [
+        615.566,
+        472.025
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        228
+      ],
+      "father_ids": [
+        227
+      ]
+    },
+    {
+      "id": 43,
+      "pos": [
+        588.916,
+        372.088
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        232
+      ],
+      "father_ids": [
+        231
+      ]
+    },
+    {
+      "id": 44,
+      "pos": [
+        588.916,
+        208.797
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        238
+      ],
+      "father_ids": [
+        237
+      ]
+    },
+    {
+      "id": 45,
+      "pos": [
+        593.872,
+        165.701
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        239
+      ],
+      "father_ids": [
+        238
+      ]
+    },
+    {
+      "id": 46,
+      "pos": [
+        611.673,
+        116.448
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        241
+      ],
+      "father_ids": [
+        240
+      ]
+    },
+    {
+      "id": 47,
+      "pos": [
+        644.775,
+        107.826
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        242
+      ],
+      "father_ids": [
+        241
+      ]
+    },
+    {
+      "id": 48,
+      "pos": [
+        682.607,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        243
+      ],
+      "father_ids": [
+        242
+      ]
+    },
+    {
+      "id": 49,
+      "pos": [
+        1006.511,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        255
+      ],
+      "father_ids": [
+        254
+      ]
+    },
+    {
+      "id": 50,
+      "pos": [
+        1071.98,
+        114.663
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        257
+      ],
+      "father_ids": [
+        256
+      ]
+    },
+    {
+      "id": 51,
+      "pos": [
+        1146.803,
+        151.53
+      ],
+      "loop_connect": 84,
+      "children_ids": [
+        259
+      ],
+      "father_ids": [
+        222
+      ]
+    },
+    {
+      "id": 52,
+      "pos": [
+        1210.002,
+        121.636
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        262
+      ],
+      "father_ids": [
+        261
+      ]
+    },
+    {
+      "id": 53,
+      "pos": [
+        1282.231,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        264
+      ],
+      "father_ids": [
+        263
+      ]
+    },
+    {
+      "id": 54,
+      "pos": [
+        1544.566,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        274
+      ],
+      "father_ids": [
+        273
+      ]
+    },
+    {
+      "id": 55,
+      "pos": [
+        1582.51,
+        113.032
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        275
+      ],
+      "father_ids": [
+        274
+      ]
+    },
+    {
+      "id": 56,
+      "pos": [
+        1625.875,
+        124.812
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        276
+      ],
+      "father_ids": [
+        275
+      ]
+    },
+    {
+      "id": 57,
+      "pos": [
+        1641.439,
+        169.002
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        277
+      ],
+      "father_ids": [
+        276
+      ]
+    },
+    {
+      "id": 58,
+      "pos": [
+        1647.626,
+        219.505
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        279
+      ],
+      "father_ids": [
+        278
+      ]
+    },
+    {
+      "id": 59,
+      "pos": [
+        1647.626,
+        629.069
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        295
+      ],
+      "father_ids": [
+        294
+      ]
+    },
+    {
+      "id": 60,
+      "pos": [
+        1633.769,
+        704.651
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        298
+      ],
+      "father_ids": [
+        297
+      ]
+    },
+    {
+      "id": 61,
+      "pos": [
+        1583.996,
+        791.03
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        301
+      ],
+      "father_ids": [
+        300
+      ]
+    },
+    {
+      "id": 62,
+      "pos": [
+        1516.607,
+        765.924
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        303
+      ],
+      "father_ids": [
+        302
+      ]
+    },
+    {
+      "id": 63,
+      "pos": [
+        1453.751,
+        721.776
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        306
+      ],
+      "father_ids": [
+        305
+      ]
+    },
+    {
+      "id": 64,
+      "pos": [
+        1187.118,
+        469.182
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        320
+      ],
+      "father_ids": [
+        319
+      ]
+    },
+    {
+      "id": 65,
+      "pos": [
+        1151.718,
+        428.341
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        322
+      ],
+      "father_ids": [
+        321
+      ]
+    },
+    {
+      "id": 66,
+      "pos": [
+        1120.035,
+        372.088
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        67
+      ],
+      "father_ids": [
+        260
+      ]
+    },
+    {
+      "id": 67,
+      "pos": [
+        1119.617,
+        371.139
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        323,
+        338
+      ],
+      "father_ids": [
+        66
+      ]
+    },
+    {
+      "id": 68,
+      "pos": [
+        1072.775,
+        369.055
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        325
+      ],
+      "father_ids": [
+        323
+      ]
+    },
+    {
+      "id": 69,
+      "pos": [
+        1025.443,
+        359.904
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        70
+      ],
+      "father_ids": [
+        325
+      ]
+    },
+    {
+      "id": 70,
+      "pos": [
+        1006.511,
+        354.416
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        326
+      ],
+      "father_ids": [
+        69
+      ]
+    },
+    {
+      "id": 71,
+      "pos": [
+        938.95,
+        347.19
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        328
+      ],
+      "father_ids": [
+        327
+      ]
+    },
+    {
+      "id": 72,
+      "pos": [
+        861.738,
+        369.19
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        73
+      ],
+      "father_ids": [
+        330
+      ]
+    },
+    {
+      "id": 73,
+      "pos": [
+        861.284,
+        370.542
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        74
+      ],
+      "father_ids": [
+        72
+      ]
+    },
+    {
+      "id": 74,
+      "pos": [
+        860.777,
+        372.088
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        331
+      ],
+      "father_ids": [
+        73
+      ]
+    },
+    {
+      "id": 75,
+      "pos": [
+        839.049,
+        439.01
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        333
+      ],
+      "father_ids": [
+        332
+      ]
+    },
+    {
+      "id": 76,
+      "pos": [
+        807.722,
+        503.969
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        335
+      ],
+      "father_ids": [
+        334
+      ]
+    },
+    {
+      "id": 77,
+      "pos": [
+        746.853,
+        578.208
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        324
+      ],
+      "father_ids": [
+        337
+      ]
+    },
+    {
+      "id": 78,
+      "pos": [
+        724.097,
+        600.964
+      ],
+      "loop_connect": 38,
+      "children_ids": [],
+      "father_ids": [
+        324
+      ]
+    },
+    {
+      "id": 79,
+      "pos": [
+        1138.98,
+        308.827
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        341
+      ],
+      "father_ids": [
+        340
+      ]
+    },
+    {
+      "id": 80,
+      "pos": [
+        1144.371,
+        254.305
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        343
+      ],
+      "father_ids": [
+        342
+      ]
+    },
+    {
+      "id": 81,
+      "pos": [
+        1144.371,
+        219.505
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        82
+      ],
+      "father_ids": [
+        343
+      ]
+    },
+    {
+      "id": 82,
+      "pos": [
+        1144.43,
+        213.794
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        83
+      ],
+      "father_ids": [
+        81
+      ]
+    },
+    {
+      "id": 83,
+      "pos": [
+        1144.579,
+        208.797
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        344
+      ],
+      "father_ids": [
+        82
+      ]
+    },
+    {
+      "id": 84,
+      "pos": [
+        1146.803,
+        151.53
+      ],
+      "loop_connect": 51,
+      "children_ids": [],
+      "father_ids": [
+        339
+      ]
+    },
+    {
+      "id": 85,
+      "pos": [
+        930.307,
+        1423.495
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        87
+      ],
+      "father_ids": [
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "pos": [
+        699.879,
+        873.365
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        15
+      ],
+      "father_ids": [
+        14
+      ]
+    },
+    {
+      "id": 87,
+      "pos": [
+        948.566,
+        1431.742
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        88
+      ],
+      "father_ids": [
+        85
+      ]
+    },
+    {
+      "id": 88,
+      "pos": [
+        966.825,
+        1439.989
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        1
+      ],
+      "father_ids": [
+        87
+      ]
+    },
+    {
+      "id": 89,
+      "pos": [
+        1004.549,
+        1453.222
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        90
+      ],
+      "father_ids": [
+        1
+      ]
+    },
+    {
+      "id": 90,
+      "pos": [
+        1024.014,
+        1458.209
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        91
+      ],
+      "father_ids": [
+        89
+      ]
+    },
+    {
+      "id": 91,
+      "pos": [
+        1043.48,
+        1463.196
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        92
+      ],
+      "father_ids": [
+        90
+      ]
+    },
+    {
+      "id": 92,
+      "pos": [
+        1062.945,
+        1468.183
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        2
+      ],
+      "father_ids": [
+        91
+      ]
+    },
+    {
+      "id": 93,
+      "pos": [
+        1103.701,
+        1470.821
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        94
+      ],
+      "father_ids": [
+        2
+      ]
+    },
+    {
+      "id": 94,
+      "pos": [
+        1124.991,
+        1468.472
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        95
+      ],
+      "father_ids": [
+        93
+      ]
+    },
+    {
+      "id": 95,
+      "pos": [
+        1146.281,
+        1466.123
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        3
+      ],
+      "father_ids": [
+        94
+      ]
+    },
+    {
+      "id": 96,
+      "pos": [
+        1186.395,
+        1458.478
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        97
+      ],
+      "father_ids": [
+        3
+      ]
+    },
+    {
+      "id": 97,
+      "pos": [
+        1205.218,
+        1453.182
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        4
+      ],
+      "father_ids": [
+        96
+      ]
+    },
+    {
+      "id": 98,
+      "pos": [
+        1243.131,
+        1441.205
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        5
+      ],
+      "father_ids": [
+        4
+      ]
+    },
+    {
+      "id": 99,
+      "pos": [
+        1278.926,
+        1426.532
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        6
+      ],
+      "father_ids": [
+        5
+      ]
+    },
+    {
+      "id": 100,
+      "pos": [
+        1290.505,
+        1397.596
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        101
+      ],
+      "father_ids": [
+        6
+      ]
+    },
+    {
+      "id": 101,
+      "pos": [
+        1285.381,
+        1376.653
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        102
+      ],
+      "father_ids": [
+        100
+      ]
+    },
+    {
+      "id": 102,
+      "pos": [
+        1280.256,
+        1355.711
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        103
+      ],
+      "father_ids": [
+        101
+      ]
+    },
+    {
+      "id": 103,
+      "pos": [
+        1275.131,
+        1334.768
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        7
+      ],
+      "father_ids": [
+        102
+      ]
+    },
+    {
+      "id": 104,
+      "pos": [
+        1258.623,
+        1296.6
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        105
+      ],
+      "father_ids": [
+        7
+      ]
+    },
+    {
+      "id": 105,
+      "pos": [
+        1247.239,
+        1279.375
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        106
+      ],
+      "father_ids": [
+        104
+      ]
+    },
+    {
+      "id": 106,
+      "pos": [
+        1235.855,
+        1262.149
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        8
+      ],
+      "father_ids": [
+        105
+      ]
+    },
+    {
+      "id": 107,
+      "pos": [
+        1207.543,
+        1227.401
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        108
+      ],
+      "father_ids": [
+        8
+      ]
+    },
+    {
+      "id": 108,
+      "pos": [
+        1190.615,
+        1209.878
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        109
+      ],
+      "father_ids": [
+        107
+      ]
+    },
+    {
+      "id": 109,
+      "pos": [
+        1173.687,
+        1192.356
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        110
+      ],
+      "father_ids": [
+        108
+      ]
+    },
+    {
+      "id": 110,
+      "pos": [
+        1156.759,
+        1174.833
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        111
+      ],
+      "father_ids": [
+        109
+      ]
+    },
+    {
+      "id": 111,
+      "pos": [
+        1139.831,
+        1157.311
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        112
+      ],
+      "father_ids": [
+        110
+      ]
+    },
+    {
+      "id": 112,
+      "pos": [
+        1122.903,
+        1139.789
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        113
+      ],
+      "father_ids": [
+        111
+      ]
+    },
+    {
+      "id": 113,
+      "pos": [
+        1105.976,
+        1122.266
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        114
+      ],
+      "father_ids": [
+        112
+      ]
+    },
+    {
+      "id": 114,
+      "pos": [
+        1089.048,
+        1104.744
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        115
+      ],
+      "father_ids": [
+        113
+      ]
+    },
+    {
+      "id": 115,
+      "pos": [
+        1072.12,
+        1087.221
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        116
+      ],
+      "father_ids": [
+        114
+      ]
+    },
+    {
+      "id": 116,
+      "pos": [
+        1055.192,
+        1069.699
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        117
+      ],
+      "father_ids": [
+        115
+      ]
+    },
+    {
+      "id": 117,
+      "pos": [
+        1038.264,
+        1052.177
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        118
+      ],
+      "father_ids": [
+        116
+      ]
+    },
+    {
+      "id": 118,
+      "pos": [
+        1021.336,
+        1034.654
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        119
+      ],
+      "father_ids": [
+        117
+      ]
+    },
+    {
+      "id": 119,
+      "pos": [
+        1004.408,
+        1017.132
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        120
+      ],
+      "father_ids": [
+        118
+      ]
+    },
+    {
+      "id": 120,
+      "pos": [
+        987.48,
+        999.609
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        9
+      ],
+      "father_ids": [
+        119
+      ]
+    },
+    {
+      "id": 121,
+      "pos": [
+        951.394,
+        967.924
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        122
+      ],
+      "father_ids": [
+        9
+      ]
+    },
+    {
+      "id": 122,
+      "pos": [
+        932.236,
+        953.761
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        10
+      ],
+      "father_ids": [
+        121
+      ]
+    },
+    {
+      "id": 123,
+      "pos": [
+        891.707,
+        931.735
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        124
+      ],
+      "father_ids": [
+        10
+      ]
+    },
+    {
+      "id": 124,
+      "pos": [
+        870.336,
+        923.872
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        11
+      ],
+      "father_ids": [
+        123
+      ]
+    },
+    {
+      "id": 125,
+      "pos": [
+        828.543,
+        911.017
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        126
+      ],
+      "father_ids": [
+        11
+      ]
+    },
+    {
+      "id": 126,
+      "pos": [
+        808.121,
+        906.025
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        12
+      ],
+      "father_ids": [
+        125
+      ]
+    },
+    {
+      "id": 127,
+      "pos": [
+        770.735,
+        896.357
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        13
+      ],
+      "father_ids": [
+        12
+      ]
+    },
+    {
+      "id": 128,
+      "pos": [
+        738.204,
+        886.546
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        14
+      ],
+      "father_ids": [
+        13
+      ]
+    },
+    {
+      "id": 129,
+      "pos": [
+        678.641,
+        889.923
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        131
+      ],
+      "father_ids": [
+        15
+      ]
+    },
+    {
+      "id": 130,
+      "pos": [
+        900.562,
+        1389.193
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        20
+      ],
+      "father_ids": [
+        150
+      ]
+    },
+    {
+      "id": 131,
+      "pos": [
+        680.795,
+        912.912
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        132
+      ],
+      "father_ids": [
+        129
+      ]
+    },
+    {
+      "id": 132,
+      "pos": [
+        682.949,
+        935.902
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        133
+      ],
+      "father_ids": [
+        131
+      ]
+    },
+    {
+      "id": 133,
+      "pos": [
+        685.103,
+        958.891
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        134
+      ],
+      "father_ids": [
+        132
+      ]
+    },
+    {
+      "id": 134,
+      "pos": [
+        687.257,
+        981.881
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        135
+      ],
+      "father_ids": [
+        133
+      ]
+    },
+    {
+      "id": 135,
+      "pos": [
+        689.412,
+        1004.87
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        136
+      ],
+      "father_ids": [
+        134
+      ]
+    },
+    {
+      "id": 136,
+      "pos": [
+        691.566,
+        1027.86
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        16
+      ],
+      "father_ids": [
+        135
+      ]
+    },
+    {
+      "id": 137,
+      "pos": [
+        704.405,
+        1070.406
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        138
+      ],
+      "father_ids": [
+        16
+      ]
+    },
+    {
+      "id": 138,
+      "pos": [
+        715.089,
+        1089.962
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        139
+      ],
+      "father_ids": [
+        137
+      ]
+    },
+    {
+      "id": 139,
+      "pos": [
+        725.774,
+        1109.518
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        140
+      ],
+      "father_ids": [
+        138
+      ]
+    },
+    {
+      "id": 140,
+      "pos": [
+        736.459,
+        1129.074
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        141
+      ],
+      "father_ids": [
+        139
+      ]
+    },
+    {
+      "id": 141,
+      "pos": [
+        747.144,
+        1148.631
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        17
+      ],
+      "father_ids": [
+        140
+      ]
+    },
+    {
+      "id": 142,
+      "pos": [
+        773.13,
+        1185.126
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        143
+      ],
+      "father_ids": [
+        17
+      ]
+    },
+    {
+      "id": 143,
+      "pos": [
+        788.431,
+        1202.065
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        144
+      ],
+      "father_ids": [
+        142
+      ]
+    },
+    {
+      "id": 144,
+      "pos": [
+        803.732,
+        1219.004
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        145
+      ],
+      "father_ids": [
+        143
+      ]
+    },
+    {
+      "id": 145,
+      "pos": [
+        819.033,
+        1235.944
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        18
+      ],
+      "father_ids": [
+        144
+      ]
+    },
+    {
+      "id": 146,
+      "pos": [
+        846.575,
+        1272.072
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        147
+      ],
+      "father_ids": [
+        18
+      ]
+    },
+    {
+      "id": 147,
+      "pos": [
+        858.815,
+        1291.262
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        148
+      ],
+      "father_ids": [
+        146
+      ]
+    },
+    {
+      "id": 148,
+      "pos": [
+        871.055,
+        1310.451
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        19
+      ],
+      "father_ids": [
+        147
+      ]
+    },
+    {
+      "id": 149,
+      "pos": [
+        889.051,
+        1349.491
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        150
+      ],
+      "father_ids": [
+        19
+      ]
+    },
+    {
+      "id": 150,
+      "pos": [
+        894.806,
+        1369.342
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        130
+      ],
+      "father_ids": [
+        149
+      ]
+    },
+    {
+      "id": 151,
+      "pos": [
+        638.378,
+        833.566
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        23
+      ],
+      "father_ids": [
+        22
+      ]
+    },
+    {
+      "id": 152,
+      "pos": [
+        251.576,
+        1405.255
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        30
+      ],
+      "father_ids": [
+        29
+      ]
+    },
+    {
+      "id": 153,
+      "pos": [
+        594.728,
+        826.123
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        24
+      ],
+      "father_ids": [
+        23
+      ]
+    },
+    {
+      "id": 154,
+      "pos": [
+        551.98,
+        816.378
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        155
+      ],
+      "father_ids": [
+        24
+      ]
+    },
+    {
+      "id": 155,
+      "pos": [
+        529.139,
+        810.788
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        156
+      ],
+      "father_ids": [
+        154
+      ]
+    },
+    {
+      "id": 156,
+      "pos": [
+        506.299,
+        805.197
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        157
+      ],
+      "father_ids": [
+        155
+      ]
+    },
+    {
+      "id": 157,
+      "pos": [
+        483.458,
+        799.607
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        158
+      ],
+      "father_ids": [
+        156
+      ]
+    },
+    {
+      "id": 158,
+      "pos": [
+        460.618,
+        794.017
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        159
+      ],
+      "father_ids": [
+        157
+      ]
+    },
+    {
+      "id": 159,
+      "pos": [
+        437.777,
+        788.426
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        160
+      ],
+      "father_ids": [
+        158
+      ]
+    },
+    {
+      "id": 160,
+      "pos": [
+        414.937,
+        782.836
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        161
+      ],
+      "father_ids": [
+        159
+      ]
+    },
+    {
+      "id": 161,
+      "pos": [
+        392.096,
+        777.246
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        162
+      ],
+      "father_ids": [
+        160
+      ]
+    },
+    {
+      "id": 162,
+      "pos": [
+        369.256,
+        771.655
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        163
+      ],
+      "father_ids": [
+        161
+      ]
+    },
+    {
+      "id": 163,
+      "pos": [
+        346.416,
+        766.065
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        25
+      ],
+      "father_ids": [
+        162
+      ]
+    },
+    {
+      "id": 164,
+      "pos": [
+        313.323,
+        780.203
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        165
+      ],
+      "father_ids": [
+        25
+      ]
+    },
+    {
+      "id": 165,
+      "pos": [
+        303.071,
+        799.932
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        166
+      ],
+      "father_ids": [
+        164
+      ]
+    },
+    {
+      "id": 166,
+      "pos": [
+        292.818,
+        819.66
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        167
+      ],
+      "father_ids": [
+        165
+      ]
+    },
+    {
+      "id": 167,
+      "pos": [
+        282.566,
+        839.388
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        168
+      ],
+      "father_ids": [
+        166
+      ]
+    },
+    {
+      "id": 168,
+      "pos": [
+        272.314,
+        859.117
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        26
+      ],
+      "father_ids": [
+        167
+      ]
+    },
+    {
+      "id": 169,
+      "pos": [
+        258.636,
+        899.56
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        170
+      ],
+      "father_ids": [
+        26
+      ]
+    },
+    {
+      "id": 170,
+      "pos": [
+        255.211,
+        920.275
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        171
+      ],
+      "father_ids": [
+        169
+      ]
+    },
+    {
+      "id": 171,
+      "pos": [
+        251.786,
+        940.989
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        172
+      ],
+      "father_ids": [
+        170
+      ]
+    },
+    {
+      "id": 172,
+      "pos": [
+        248.361,
+        961.704
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        27
+      ],
+      "father_ids": [
+        171
+      ]
+    },
+    {
+      "id": 173,
+      "pos": [
+        244.936,
+        1006.511
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        174
+      ],
+      "father_ids": [
+        27
+      ]
+    },
+    {
+      "id": 174,
+      "pos": [
+        244.936,
+        1030.603
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        175
+      ],
+      "father_ids": [
+        173
+      ]
+    },
+    {
+      "id": 175,
+      "pos": [
+        244.936,
+        1054.695
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        176
+      ],
+      "father_ids": [
+        174
+      ]
+    },
+    {
+      "id": 176,
+      "pos": [
+        244.936,
+        1078.787
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        177
+      ],
+      "father_ids": [
+        175
+      ]
+    },
+    {
+      "id": 177,
+      "pos": [
+        244.936,
+        1102.879
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        178
+      ],
+      "father_ids": [
+        176
+      ]
+    },
+    {
+      "id": 178,
+      "pos": [
+        244.936,
+        1126.971
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        179
+      ],
+      "father_ids": [
+        177
+      ]
+    },
+    {
+      "id": 179,
+      "pos": [
+        244.936,
+        1151.063
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        180
+      ],
+      "father_ids": [
+        178
+      ]
+    },
+    {
+      "id": 180,
+      "pos": [
+        244.936,
+        1175.155
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        181
+      ],
+      "father_ids": [
+        179
+      ]
+    },
+    {
+      "id": 181,
+      "pos": [
+        244.936,
+        1199.247
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        182
+      ],
+      "father_ids": [
+        180
+      ]
+    },
+    {
+      "id": 182,
+      "pos": [
+        244.936,
+        1223.339
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        183
+      ],
+      "father_ids": [
+        181
+      ]
+    },
+    {
+      "id": 183,
+      "pos": [
+        244.936,
+        1247.431
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        184
+      ],
+      "father_ids": [
+        182
+      ]
+    },
+    {
+      "id": 184,
+      "pos": [
+        244.936,
+        1271.523
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        185
+      ],
+      "father_ids": [
+        183
+      ]
+    },
+    {
+      "id": 185,
+      "pos": [
+        244.936,
+        1295.615
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        186
+      ],
+      "father_ids": [
+        184
+      ]
+    },
+    {
+      "id": 186,
+      "pos": [
+        244.936,
+        1319.707
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        28
+      ],
+      "father_ids": [
+        185
+      ]
+    },
+    {
+      "id": 187,
+      "pos": [
+        246.612,
+        1366.711
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        29
+      ],
+      "father_ids": [
+        28
+      ]
+    },
+    {
+      "id": 188,
+      "pos": [
+        279.79,
+        1439.354
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        190
+      ],
+      "father_ids": [
+        30
+      ]
+    },
+    {
+      "id": 189,
+      "pos": [
+        885.313,
+        1424.68
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        35
+      ],
+      "father_ids": [
+        211
+      ]
+    },
+    {
+      "id": 190,
+      "pos": [
+        297.845,
+        1446.893
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        191
+      ],
+      "father_ids": [
+        188
+      ]
+    },
+    {
+      "id": 191,
+      "pos": [
+        315.9,
+        1454.433
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        31
+      ],
+      "father_ids": [
+        190
+      ]
+    },
+    {
+      "id": 192,
+      "pos": [
+        356.481,
+        1464.965
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        193
+      ],
+      "father_ids": [
+        31
+      ]
+    },
+    {
+      "id": 193,
+      "pos": [
+        379.007,
+        1467.958
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        32
+      ],
+      "father_ids": [
+        192
+      ]
+    },
+    {
+      "id": 194,
+      "pos": [
+        425.434,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        195
+      ],
+      "father_ids": [
+        32
+      ]
+    },
+    {
+      "id": 195,
+      "pos": [
+        449.335,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        196
+      ],
+      "father_ids": [
+        194
+      ]
+    },
+    {
+      "id": 196,
+      "pos": [
+        473.236,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        197
+      ],
+      "father_ids": [
+        195
+      ]
+    },
+    {
+      "id": 197,
+      "pos": [
+        497.137,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        198
+      ],
+      "father_ids": [
+        196
+      ]
+    },
+    {
+      "id": 198,
+      "pos": [
+        521.038,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        199
+      ],
+      "father_ids": [
+        197
+      ]
+    },
+    {
+      "id": 199,
+      "pos": [
+        544.939,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        200
+      ],
+      "father_ids": [
+        198
+      ]
+    },
+    {
+      "id": 200,
+      "pos": [
+        568.839,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        201
+      ],
+      "father_ids": [
+        199
+      ]
+    },
+    {
+      "id": 201,
+      "pos": [
+        592.74,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        202
+      ],
+      "father_ids": [
+        200
+      ]
+    },
+    {
+      "id": 202,
+      "pos": [
+        616.641,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        203
+      ],
+      "father_ids": [
+        201
+      ]
+    },
+    {
+      "id": 203,
+      "pos": [
+        640.542,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        204
+      ],
+      "father_ids": [
+        202
+      ]
+    },
+    {
+      "id": 204,
+      "pos": [
+        664.443,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        205
+      ],
+      "father_ids": [
+        203
+      ]
+    },
+    {
+      "id": 205,
+      "pos": [
+        688.343,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        206
+      ],
+      "father_ids": [
+        204
+      ]
+    },
+    {
+      "id": 206,
+      "pos": [
+        712.244,
+        1470.952
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        33
+      ],
+      "father_ids": [
+        205
+      ]
+    },
+    {
+      "id": 207,
+      "pos": [
+        758.995,
+        1466.845
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        208
+      ],
+      "father_ids": [
+        33
+      ]
+    },
+    {
+      "id": 208,
+      "pos": [
+        781.846,
+        1462.739
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        209
+      ],
+      "father_ids": [
+        207
+      ]
+    },
+    {
+      "id": 209,
+      "pos": [
+        804.696,
+        1458.632
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        34
+      ],
+      "father_ids": [
+        208
+      ]
+    },
+    {
+      "id": 210,
+      "pos": [
+        846.802,
+        1444.577
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        211
+      ],
+      "father_ids": [
+        34
+      ]
+    },
+    {
+      "id": 211,
+      "pos": [
+        866.058,
+        1434.629
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        189
+      ],
+      "father_ids": [
+        210
+      ]
+    },
+    {
+      "id": 212,
+      "pos": [
+        673.736,
+        814.351
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        36
+      ],
+      "father_ids": [
+        22
+      ]
+    },
+    {
+      "id": 213,
+      "pos": [
+        720.95,
+        625.765
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        38
+      ],
+      "father_ids": [
+        220
+      ]
+    },
+    {
+      "id": 214,
+      "pos": [
+        681.143,
+        793.912
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        215
+      ],
+      "father_ids": [
+        36
+      ]
+    },
+    {
+      "id": 215,
+      "pos": [
+        688.281,
+        774.05
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        216
+      ],
+      "father_ids": [
+        214
+      ]
+    },
+    {
+      "id": 216,
+      "pos": [
+        695.418,
+        754.188
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        217
+      ],
+      "father_ids": [
+        215
+      ]
+    },
+    {
+      "id": 217,
+      "pos": [
+        702.556,
+        734.325
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        37
+      ],
+      "father_ids": [
+        216
+      ]
+    },
+    {
+      "id": 218,
+      "pos": [
+        712.508,
+        692.289
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        219
+      ],
+      "father_ids": [
+        37
+      ]
+    },
+    {
+      "id": 219,
+      "pos": [
+        715.322,
+        670.114
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        220
+      ],
+      "father_ids": [
+        218
+      ]
+    },
+    {
+      "id": 220,
+      "pos": [
+        718.136,
+        647.94
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        213
+      ],
+      "father_ids": [
+        219
+      ]
+    },
+    {
+      "id": 221,
+      "pos": [
+        706.421,
+        583.284
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        223
+      ],
+      "father_ids": [
+        40
+      ]
+    },
+    {
+      "id": 222,
+      "pos": [
+        1124.377,
+        140.48
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        51
+      ],
+      "father_ids": [
+        258
+      ]
+    },
+    {
+      "id": 223,
+      "pos": [
+        694.514,
+        571.377
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        41
+      ],
+      "father_ids": [
+        221
+      ]
+    },
+    {
+      "id": 224,
+      "pos": [
+        669.199,
+        541.981
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        225
+      ],
+      "father_ids": [
+        41
+      ]
+    },
+    {
+      "id": 225,
+      "pos": [
+        655.791,
+        524.492
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        226
+      ],
+      "father_ids": [
+        224
+      ]
+    },
+    {
+      "id": 226,
+      "pos": [
+        642.382,
+        507.003
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        227
+      ],
+      "father_ids": [
+        225
+      ]
+    },
+    {
+      "id": 227,
+      "pos": [
+        628.974,
+        489.514
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        42
+      ],
+      "father_ids": [
+        226
+      ]
+    },
+    {
+      "id": 228,
+      "pos": [
+        610.236,
+        452.038
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        229
+      ],
+      "father_ids": [
+        42
+      ]
+    },
+    {
+      "id": 229,
+      "pos": [
+        604.906,
+        432.05
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        230
+      ],
+      "father_ids": [
+        228
+      ]
+    },
+    {
+      "id": 230,
+      "pos": [
+        599.576,
+        412.063
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        231
+      ],
+      "father_ids": [
+        229
+      ]
+    },
+    {
+      "id": 231,
+      "pos": [
+        594.246,
+        392.075
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        43
+      ],
+      "father_ids": [
+        230
+      ]
+    },
+    {
+      "id": 232,
+      "pos": [
+        588.916,
+        348.761
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        233
+      ],
+      "father_ids": [
+        43
+      ]
+    },
+    {
+      "id": 233,
+      "pos": [
+        588.916,
+        325.433
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        234
+      ],
+      "father_ids": [
+        232
+      ]
+    },
+    {
+      "id": 234,
+      "pos": [
+        588.916,
+        302.106
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        235
+      ],
+      "father_ids": [
+        233
+      ]
+    },
+    {
+      "id": 235,
+      "pos": [
+        588.916,
+        278.779
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        236
+      ],
+      "father_ids": [
+        234
+      ]
+    },
+    {
+      "id": 236,
+      "pos": [
+        588.916,
+        255.452
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        237
+      ],
+      "father_ids": [
+        235
+      ]
+    },
+    {
+      "id": 237,
+      "pos": [
+        588.916,
+        232.125
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        44
+      ],
+      "father_ids": [
+        236
+      ]
+    },
+    {
+      "id": 238,
+      "pos": [
+        591.394,
+        187.249
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        45
+      ],
+      "father_ids": [
+        44
+      ]
+    },
+    {
+      "id": 239,
+      "pos": [
+        599.806,
+        149.283
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        240
+      ],
+      "father_ids": [
+        45
+      ]
+    },
+    {
+      "id": 240,
+      "pos": [
+        605.739,
+        132.866
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        46
+      ],
+      "father_ids": [
+        239
+      ]
+    },
+    {
+      "id": 241,
+      "pos": [
+        628.224,
+        112.137
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        47
+      ],
+      "father_ids": [
+        46
+      ]
+    },
+    {
+      "id": 242,
+      "pos": [
+        663.691,
+        106.112
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        48
+      ],
+      "father_ids": [
+        47
+      ]
+    },
+    {
+      "id": 243,
+      "pos": [
+        707.523,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        244
+      ],
+      "father_ids": [
+        48
+      ]
+    },
+    {
+      "id": 244,
+      "pos": [
+        732.439,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        245
+      ],
+      "father_ids": [
+        243
+      ]
+    },
+    {
+      "id": 245,
+      "pos": [
+        757.354,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        246
+      ],
+      "father_ids": [
+        244
+      ]
+    },
+    {
+      "id": 246,
+      "pos": [
+        782.27,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        247
+      ],
+      "father_ids": [
+        245
+      ]
+    },
+    {
+      "id": 247,
+      "pos": [
+        807.186,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        248
+      ],
+      "father_ids": [
+        246
+      ]
+    },
+    {
+      "id": 248,
+      "pos": [
+        832.101,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        249
+      ],
+      "father_ids": [
+        247
+      ]
+    },
+    {
+      "id": 249,
+      "pos": [
+        857.017,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        250
+      ],
+      "father_ids": [
+        248
+      ]
+    },
+    {
+      "id": 250,
+      "pos": [
+        881.933,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        251
+      ],
+      "father_ids": [
+        249
+      ]
+    },
+    {
+      "id": 251,
+      "pos": [
+        906.848,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        252
+      ],
+      "father_ids": [
+        250
+      ]
+    },
+    {
+      "id": 252,
+      "pos": [
+        931.764,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        253
+      ],
+      "father_ids": [
+        251
+      ]
+    },
+    {
+      "id": 253,
+      "pos": [
+        956.68,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        254
+      ],
+      "father_ids": [
+        252
+      ]
+    },
+    {
+      "id": 254,
+      "pos": [
+        981.595,
+        104.399
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        49
+      ],
+      "father_ids": [
+        253
+      ]
+    },
+    {
+      "id": 255,
+      "pos": [
+        1028.334,
+        107.82
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        256
+      ],
+      "father_ids": [
+        49
+      ]
+    },
+    {
+      "id": 256,
+      "pos": [
+        1050.157,
+        111.242
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        50
+      ],
+      "father_ids": [
+        255
+      ]
+    },
+    {
+      "id": 257,
+      "pos": [
+        1089.446,
+        123.269
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        258
+      ],
+      "father_ids": [
+        50
+      ]
+    },
+    {
+      "id": 258,
+      "pos": [
+        1106.912,
+        131.875
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        222
+      ],
+      "father_ids": [
+        257
+      ]
+    },
+    {
+      "id": 259,
+      "pos": [
+        1169.402,
+        140.84
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        261
+      ],
+      "father_ids": [
+        51
+      ]
+    },
+    {
+      "id": 260,
+      "pos": [
+        1131.797,
+        392.971
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        66
+      ],
+      "father_ids": [
+        322
+      ]
+    },
+    {
+      "id": 261,
+      "pos": [
+        1189.702,
+        131.238
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        52
+      ],
+      "father_ids": [
+        259
+      ]
+    },
+    {
+      "id": 262,
+      "pos": [
+        1234.079,
+        117.675
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        263
+      ],
+      "father_ids": [
+        52
+      ]
+    },
+    {
+      "id": 263,
+      "pos": [
+        1258.155,
+        113.714
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        53
+      ],
+      "father_ids": [
+        262
+      ]
+    },
+    {
+      "id": 264,
+      "pos": [
+        1306.079,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        265
+      ],
+      "father_ids": [
+        53
+      ]
+    },
+    {
+      "id": 265,
+      "pos": [
+        1329.928,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        266
+      ],
+      "father_ids": [
+        264
+      ]
+    },
+    {
+      "id": 266,
+      "pos": [
+        1353.777,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        267
+      ],
+      "father_ids": [
+        265
+      ]
+    },
+    {
+      "id": 267,
+      "pos": [
+        1377.625,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        268
+      ],
+      "father_ids": [
+        266
+      ]
+    },
+    {
+      "id": 268,
+      "pos": [
+        1401.474,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        269
+      ],
+      "father_ids": [
+        267
+      ]
+    },
+    {
+      "id": 269,
+      "pos": [
+        1425.323,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        270
+      ],
+      "father_ids": [
+        268
+      ]
+    },
+    {
+      "id": 270,
+      "pos": [
+        1449.171,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        271
+      ],
+      "father_ids": [
+        269
+      ]
+    },
+    {
+      "id": 271,
+      "pos": [
+        1473.02,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        272
+      ],
+      "father_ids": [
+        270
+      ]
+    },
+    {
+      "id": 272,
+      "pos": [
+        1496.869,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        273
+      ],
+      "father_ids": [
+        271
+      ]
+    },
+    {
+      "id": 273,
+      "pos": [
+        1520.717,
+        109.753
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        54
+      ],
+      "father_ids": [
+        272
+      ]
+    },
+    {
+      "id": 274,
+      "pos": [
+        1563.538,
+        111.392
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        55
+      ],
+      "father_ids": [
+        54
+      ]
+    },
+    {
+      "id": 275,
+      "pos": [
+        1604.193,
+        118.922
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        56
+      ],
+      "father_ids": [
+        55
+      ]
+    },
+    {
+      "id": 276,
+      "pos": [
+        1633.657,
+        146.907
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        57
+      ],
+      "father_ids": [
+        56
+      ]
+    },
+    {
+      "id": 277,
+      "pos": [
+        1643.502,
+        185.836
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        278
+      ],
+      "father_ids": [
+        57
+      ]
+    },
+    {
+      "id": 278,
+      "pos": [
+        1645.564,
+        202.671
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        58
+      ],
+      "father_ids": [
+        277
+      ]
+    },
+    {
+      "id": 279,
+      "pos": [
+        1647.626,
+        243.597
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        280
+      ],
+      "father_ids": [
+        58
+      ]
+    },
+    {
+      "id": 280,
+      "pos": [
+        1647.626,
+        267.689
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        281
+      ],
+      "father_ids": [
+        279
+      ]
+    },
+    {
+      "id": 281,
+      "pos": [
+        1647.626,
+        291.781
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        282
+      ],
+      "father_ids": [
+        280
+      ]
+    },
+    {
+      "id": 282,
+      "pos": [
+        1647.626,
+        315.873
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        283
+      ],
+      "father_ids": [
+        281
+      ]
+    },
+    {
+      "id": 283,
+      "pos": [
+        1647.626,
+        339.965
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        284
+      ],
+      "father_ids": [
+        282
+      ]
+    },
+    {
+      "id": 284,
+      "pos": [
+        1647.626,
+        364.057
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        285
+      ],
+      "father_ids": [
+        283
+      ]
+    },
+    {
+      "id": 285,
+      "pos": [
+        1647.626,
+        388.149
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        286
+      ],
+      "father_ids": [
+        284
+      ]
+    },
+    {
+      "id": 286,
+      "pos": [
+        1647.626,
+        412.241
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        287
+      ],
+      "father_ids": [
+        285
+      ]
+    },
+    {
+      "id": 287,
+      "pos": [
+        1647.626,
+        436.333
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        288
+      ],
+      "father_ids": [
+        286
+      ]
+    },
+    {
+      "id": 288,
+      "pos": [
+        1647.626,
+        460.425
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        289
+      ],
+      "father_ids": [
+        287
+      ]
+    },
+    {
+      "id": 289,
+      "pos": [
+        1647.626,
+        484.517
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        290
+      ],
+      "father_ids": [
+        288
+      ]
+    },
+    {
+      "id": 290,
+      "pos": [
+        1647.626,
+        508.609
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        291
+      ],
+      "father_ids": [
+        289
+      ]
+    },
+    {
+      "id": 291,
+      "pos": [
+        1647.626,
+        532.701
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        292
+      ],
+      "father_ids": [
+        290
+      ]
+    },
+    {
+      "id": 292,
+      "pos": [
+        1647.626,
+        556.793
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        293
+      ],
+      "father_ids": [
+        291
+      ]
+    },
+    {
+      "id": 293,
+      "pos": [
+        1647.626,
+        580.885
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        294
+      ],
+      "father_ids": [
+        292
+      ]
+    },
+    {
+      "id": 294,
+      "pos": [
+        1647.626,
+        604.977
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        59
+      ],
+      "father_ids": [
+        293
+      ]
+    },
+    {
+      "id": 295,
+      "pos": [
+        1644.162,
+        647.965
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        296
+      ],
+      "father_ids": [
+        59
+      ]
+    },
+    {
+      "id": 296,
+      "pos": [
+        1640.698,
+        666.86
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        297
+      ],
+      "father_ids": [
+        295
+      ]
+    },
+    {
+      "id": 297,
+      "pos": [
+        1637.233,
+        685.756
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        60
+      ],
+      "father_ids": [
+        296
+      ]
+    },
+    {
+      "id": 298,
+      "pos": [
+        1621.326,
+        726.246
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        299
+      ],
+      "father_ids": [
+        60
+      ]
+    },
+    {
+      "id": 299,
+      "pos": [
+        1608.882,
+        747.84
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        300
+      ],
+      "father_ids": [
+        298
+      ]
+    },
+    {
+      "id": 300,
+      "pos": [
+        1596.439,
+        769.435
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        61
+      ],
+      "father_ids": [
+        299
+      ]
+    },
+    {
+      "id": 301,
+      "pos": [
+        1561.533,
+        782.661
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        302
+      ],
+      "father_ids": [
+        61
+      ]
+    },
+    {
+      "id": 302,
+      "pos": [
+        1539.07,
+        774.293
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        62
+      ],
+      "father_ids": [
+        301
+      ]
+    },
+    {
+      "id": 303,
+      "pos": [
+        1500.893,
+        754.887
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        304
+      ],
+      "father_ids": [
+        62
+      ]
+    },
+    {
+      "id": 304,
+      "pos": [
+        1485.179,
+        743.85
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        305
+      ],
+      "father_ids": [
+        303
+      ]
+    },
+    {
+      "id": 305,
+      "pos": [
+        1469.465,
+        732.813
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        63
+      ],
+      "father_ids": [
+        304
+      ]
+    },
+    {
+      "id": 306,
+      "pos": [
+        1435.976,
+        704.936
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        307
+      ],
+      "father_ids": [
+        63
+      ]
+    },
+    {
+      "id": 307,
+      "pos": [
+        1418.2,
+        688.097
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        308
+      ],
+      "father_ids": [
+        306
+      ]
+    },
+    {
+      "id": 308,
+      "pos": [
+        1400.425,
+        671.257
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        309
+      ],
+      "father_ids": [
+        307
+      ]
+    },
+    {
+      "id": 309,
+      "pos": [
+        1382.649,
+        654.417
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        310
+      ],
+      "father_ids": [
+        308
+      ]
+    },
+    {
+      "id": 310,
+      "pos": [
+        1364.874,
+        637.578
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        311
+      ],
+      "father_ids": [
+        309
+      ]
+    },
+    {
+      "id": 311,
+      "pos": [
+        1347.098,
+        620.738
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        312
+      ],
+      "father_ids": [
+        310
+      ]
+    },
+    {
+      "id": 312,
+      "pos": [
+        1329.323,
+        603.899
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        313
+      ],
+      "father_ids": [
+        311
+      ]
+    },
+    {
+      "id": 313,
+      "pos": [
+        1311.547,
+        587.059
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        314
+      ],
+      "father_ids": [
+        312
+      ]
+    },
+    {
+      "id": 314,
+      "pos": [
+        1293.772,
+        570.219
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        315
+      ],
+      "father_ids": [
+        313
+      ]
+    },
+    {
+      "id": 315,
+      "pos": [
+        1275.996,
+        553.38
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        316
+      ],
+      "father_ids": [
+        314
+      ]
+    },
+    {
+      "id": 316,
+      "pos": [
+        1258.22,
+        536.54
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        317
+      ],
+      "father_ids": [
+        315
+      ]
+    },
+    {
+      "id": 317,
+      "pos": [
+        1240.445,
+        519.701
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        318
+      ],
+      "father_ids": [
+        316
+      ]
+    },
+    {
+      "id": 318,
+      "pos": [
+        1222.669,
+        502.861
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        319
+      ],
+      "father_ids": [
+        317
+      ]
+    },
+    {
+      "id": 319,
+      "pos": [
+        1204.894,
+        486.021
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        64
+      ],
+      "father_ids": [
+        318
+      ]
+    },
+    {
+      "id": 320,
+      "pos": [
+        1175.318,
+        455.568
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        321
+      ],
+      "father_ids": [
+        64
+      ]
+    },
+    {
+      "id": 321,
+      "pos": [
+        1163.518,
+        441.954
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        65
+      ],
+      "father_ids": [
+        320
+      ]
+    },
+    {
+      "id": 322,
+      "pos": [
+        1141.757,
+        410.656
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        260
+      ],
+      "father_ids": [
+        65
+      ]
+    },
+    {
+      "id": 323,
+      "pos": [
+        1094.642,
+        370.028
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        68
+      ],
+      "father_ids": [
+        67
+      ]
+    },
+    {
+      "id": 324,
+      "pos": [
+        741.775,
+        583.286
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        78
+      ],
+      "father_ids": [
+        77
+      ]
+    },
+    {
+      "id": 325,
+      "pos": [
+        1049.109,
+        364.479
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        69
+      ],
+      "father_ids": [
+        68
+      ]
+    },
+    {
+      "id": 326,
+      "pos": [
+        983.991,
+        352.008
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        327
+      ],
+      "father_ids": [
+        70
+      ]
+    },
+    {
+      "id": 327,
+      "pos": [
+        961.471,
+        349.599
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        71
+      ],
+      "father_ids": [
+        326
+      ]
+    },
+    {
+      "id": 328,
+      "pos": [
+        919.647,
+        352.69
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        329
+      ],
+      "father_ids": [
+        71
+      ]
+    },
+    {
+      "id": 329,
+      "pos": [
+        900.344,
+        358.19
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        330
+      ],
+      "father_ids": [
+        328
+      ]
+    },
+    {
+      "id": 330,
+      "pos": [
+        881.041,
+        363.69
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        72
+      ],
+      "father_ids": [
+        329
+      ]
+    },
+    {
+      "id": 331,
+      "pos": [
+        853.534,
+        394.395
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        332
+      ],
+      "father_ids": [
+        74
+      ]
+    },
+    {
+      "id": 332,
+      "pos": [
+        846.292,
+        416.703
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        75
+      ],
+      "father_ids": [
+        331
+      ]
+    },
+    {
+      "id": 333,
+      "pos": [
+        828.607,
+        460.663
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        334
+      ],
+      "father_ids": [
+        75
+      ]
+    },
+    {
+      "id": 334,
+      "pos": [
+        818.164,
+        482.316
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        76
+      ],
+      "father_ids": [
+        333
+      ]
+    },
+    {
+      "id": 335,
+      "pos": [
+        792.505,
+        522.529
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        336
+      ],
+      "father_ids": [
+        76
+      ]
+    },
+    {
+      "id": 336,
+      "pos": [
+        777.287,
+        541.089
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        337
+      ],
+      "father_ids": [
+        335
+      ]
+    },
+    {
+      "id": 337,
+      "pos": [
+        762.07,
+        559.649
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        77
+      ],
+      "father_ids": [
+        336
+      ]
+    },
+    {
+      "id": 338,
+      "pos": [
+        1127.036,
+        347.265
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        340
+      ],
+      "father_ids": [
+        67
+      ]
+    },
+    {
+      "id": 339,
+      "pos": [
+        1145.833,
+        176.511
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        84
+      ],
+      "father_ids": [
+        344
+      ]
+    },
+    {
+      "id": 340,
+      "pos": [
+        1133.008,
+        328.046
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        79
+      ],
+      "father_ids": [
+        338
+      ]
+    },
+    {
+      "id": 341,
+      "pos": [
+        1140.777,
+        290.653
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        342
+      ],
+      "father_ids": [
+        79
+      ]
+    },
+    {
+      "id": 342,
+      "pos": [
+        1142.574,
+        272.479
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        80
+      ],
+      "father_ids": [
+        341
+      ]
+    },
+    {
+      "id": 343,
+      "pos": [
+        1144.371,
+        236.905
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        81
+      ],
+      "father_ids": [
+        80
+      ]
+    },
+    {
+      "id": 344,
+      "pos": [
+        1145.206,
+        192.654
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        339
+      ],
+      "father_ids": [
+        83
+      ]
+    }
+  ]
+}

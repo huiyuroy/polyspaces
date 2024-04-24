@@ -1,0 +1,71 @@
+{
+  "name": "test0",
+  "data": [
+    {
+      "id": 0,
+      "pos": [
+        200.292,
+        249.792
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        2
+      ],
+      "father_ids": []
+    },
+    {
+      "id": 1,
+      "pos": [
+        300.791,
+        249.709
+      ],
+      "loop_connect": -1,
+      "children_ids": [],
+      "father_ids": [
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "pos": [
+        225.292,
+        249.771
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        4
+      ],
+      "father_ids": [
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "pos": [
+        274.791,
+        249.73
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        1
+      ],
+      "father_ids": [
+        4
+      ]
+    },
+    {
+      "id": 4,
+      "pos": [
+        250.042,
+        249.75
+      ],
+      "loop_connect": -1,
+      "children_ids": [
+        3
+      ],
+      "father_ids": [
+        2
+      ]
+    }
+  ]
+}
