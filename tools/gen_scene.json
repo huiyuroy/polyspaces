@@ -1,0 +1,441 @@
+{
+  "title": "Scene Generation",
+  "bg": "white",
+  "x": 100,
+  "y": 100,
+  "width": 1070,
+  "height": 680,
+  "components": {
+    "phy_can_y0_label": {
+      "size": [
+        5,
+        520,
+        40,
+        20
+      ],
+      "bg": "white",
+      "text": "y0",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_can_y1_label": {
+      "size": [
+        5,
+        275,
+        40,
+        20
+      ],
+      "bg": "white",
+      "text": "y1",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_can_y2_label": {
+      "size": [
+        5,
+        25,
+        40,
+        20
+      ],
+      "bg": "white",
+      "text": "y2",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_can_x0_label": {
+      "size": [
+        45,
+        530,
+        40,
+        20
+      ],
+      "bg": "white",
+      "text": "x0",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_can_x1_label": {
+      "size": [
+        250,
+        530,
+        40,
+        20
+      ],
+      "bg": "white",
+      "text": "x0",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_can_x2_label": {
+      "size": [
+        500,
+        530,
+        40,
+        20
+      ],
+      "bg": "white",
+      "text": "x0",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_canvas_label": {
+      "size": [
+        45,
+        560,
+        250,
+        20
+      ],
+      "bg": "white",
+      "text": "window size:",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "w"
+    },
+    "phy_scene_label": {
+      "size": [
+        45,
+        585,
+        250,
+        20
+      ],
+      "bg": "white",
+      "text": "scene size:",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "w"
+    },
+    "phy_canvas": {
+      "size": [
+        45,
+        30,
+        500,
+        500
+      ],
+      "bg": "white"
+    },
+    "phy_pre_canvas": {
+      "size": [
+        555,
+        30,
+        500,
+        500
+      ],
+      "bg": "white"
+    },
+    "quest_button": {
+      "size": [
+        1025,
+        5,
+        25,
+        25
+      ],
+      "text": "?",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        15,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "step1_label": {
+      "size": [
+        555,
+        540,
+        80,
+        17
+      ],
+      "bg": "lightgray",
+      "text": "-----1 begin-----",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_add_contour_button": {
+      "size": [
+        555,
+        560,
+        80,
+        65
+      ],
+      "text": "add\ncontour",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "step2_label": {
+      "size": [
+        645,
+        540,
+        180,
+        17
+      ],
+      "bg": "lightgray",
+      "text": "----------2 draw----------",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_tri_draw_button": {
+      "size": [
+        645,
+        560,
+        50,
+        30
+      ],
+      "text": "tri",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_rect_draw_button": {
+      "size": [
+        645,
+        595,
+        50,
+        30
+      ],
+      "text": "rect",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_pent_draw_button": {
+      "size": [
+        700,
+        560,
+        50,
+        30
+      ],
+      "text": "pent",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_hex_draw_button": {
+      "size": [
+        700,
+        595,
+        50,
+        30
+      ],
+      "text": "hex",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_custom_draw_button": {
+      "size": [
+        755,
+        560,
+        70,
+        65
+      ],
+      "text": "custom",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "step3_label": {
+      "size": [
+        835,
+        540,
+        75,
+        17
+      ],
+      "bg": "lightgray",
+      "text": "----------3 end----------",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_end_contour_button": {
+      "size": [
+        835,
+        560,
+        75,
+        65
+      ],
+      "text": "end\ncontour",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "step4_label": {
+      "size": [
+        920,
+        540,
+        75,
+        17
+      ],
+      "bg": "lightgray",
+      "text": "----------4 modify----------",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_rmv_last_button": {
+      "size": [
+        920,
+        560,
+        135,
+        30
+      ],
+      "text": "remove last",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_rmv_all_button": {
+      "size": [
+        920,
+        595,
+        135,
+        30
+      ],
+      "text": "remove all",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_tri_contour_button": {
+      "size": [
+        555,
+        630,
+        100,
+        40
+      ],
+      "text": "show\ntriangulation",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        10,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_open_button": {
+      "size": [
+        920,
+        640,
+        60,
+        30
+      ],
+      "text": "open",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "phy_save_button": {
+      "size": [
+        995,
+        640,
+        60,
+        30
+      ],
+      "text": "save",
+      "bg": "white",
+      "state": "Disable",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "center"
+    }
+  }
+}
