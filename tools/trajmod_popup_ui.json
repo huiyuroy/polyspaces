@@ -1,0 +1,687 @@
+{
+  "title": "Specific Modify Trajectory",
+  "bg": "white",
+  "x": 100,
+  "y": 100,
+  "width": 1070,
+  "height": 680,
+  "components": {
+    "label1": {
+      "size": [
+        810,
+        10,
+        250,
+        30
+      ],
+      "bg": "lightgray",
+      "text": "Virtual scene",
+      "font": [
+        "Times",
+        13,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label_name": {
+      "size": [
+        810,
+        40,
+        130,
+        30
+      ],
+      "bg": "white",
+      "text": "name: None",
+      "font": [
+        "Times",
+        11,
+        "bold"
+      ],
+      "anchor": "w"
+    },
+    "label_patch": {
+      "size": [
+        810,
+        70,
+        130,
+        30
+      ],
+      "bg": "white",
+      "text": "patches: 0",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label_node": {
+      "size": [
+        810,
+        100,
+        130,
+        30
+      ],
+      "bg": "white",
+      "text": "nodes: 0",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label_conv": {
+      "size": [
+        950,
+        70,
+        130,
+        30
+      ],
+      "bg": "white",
+      "text": "convs: 0",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label2": {
+      "size": [
+        810,
+        130,
+        250,
+        30
+      ],
+      "bg": "lightgray",
+      "text": "Virtual trajectory",
+      "font": [
+        "Times",
+        13,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label_follow_patch": {
+      "size": [
+        810,
+        160,
+        200,
+        30
+      ],
+      "bg": "white",
+      "text": "trajectories road-targets:",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label_follow_random": {
+      "size": [
+        810,
+        190,
+        200,
+        30
+      ],
+      "bg": "white",
+      "text": "trajectories random-targets:",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3": {
+      "size": [
+        810,
+        220,
+        250,
+        25
+      ],
+      "bg": "lightgray",
+      "text": "Trajectory generation",
+      "font": [
+        "Times",
+        13,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label3_1": {
+      "size": [
+        810,
+        250,
+        100,
+        25
+      ],
+      "bg": "white",
+      "text": "abs road repeat: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "abs_road_repeat_entry": {
+      "size": [
+        915,
+        250,
+        50,
+        25
+      ],
+      "bg": "white",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3_2": {
+      "size": [
+        965,
+        250,
+        20,
+        25
+      ],
+      "bg": "white",
+      "text": "*",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label_patch_count": {
+      "size": [
+        985,
+        250,
+        80,
+        25
+      ],
+      "bg": "white",
+      "text": "1",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "abs_road_repeat_ensure_button": {
+      "size": [
+        1010,
+        250,
+        50,
+        25
+      ],
+      "text": "ensure",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label_abs_road_total": {
+      "size": [
+        810,
+        280,
+        230,
+        30
+      ],
+      "bg": "white",
+      "text": "generation number: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3_3": {
+      "size": [
+        810,
+        310,
+        100,
+        25
+      ],
+      "bg": "white",
+      "text": "prox road repeat: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "prox_road_repeat_entry": {
+      "size": [
+        915,
+        310,
+        50,
+        25
+      ],
+      "bg": "white",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3_4": {
+      "size": [
+        965,
+        310,
+        20,
+        25
+      ],
+      "bg": "white",
+      "text": "*",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label_patch_count1": {
+      "size": [
+        985,
+        310,
+        80,
+        25
+      ],
+      "bg": "white",
+      "text": "1",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "prox_road_repeat_ensure_button": {
+      "size": [
+        1010,
+        310,
+        50,
+        25
+      ],
+      "text": "ensure",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label_prox_road_total": {
+      "size": [
+        810,
+        340,
+        230,
+        30
+      ],
+      "bg": "white",
+      "text": "generation number: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3_5": {
+      "size": [
+        810,
+        370,
+        100,
+        25
+      ],
+      "bg": "white",
+      "text": "abs rand repeat: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "abs_rand_repeat_entry": {
+      "size": [
+        915,
+        370,
+        50,
+        25
+      ],
+      "bg": "white",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3_6": {
+      "size": [
+        965,
+        370,
+        20,
+        25
+      ],
+      "bg": "white",
+      "text": "*",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label_conv_count": {
+      "size": [
+        985,
+        370,
+        80,
+        25
+      ],
+      "bg": "white",
+      "text": "1",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "abs_rand_repeat_ensure_button": {
+      "size": [
+        1010,
+        370,
+        50,
+        25
+      ],
+      "text": "ensure",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label_rand_total": {
+      "size": [
+        810,
+        400,
+        230,
+        30
+      ],
+      "bg": "white",
+      "text": "generation number: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3_7": {
+      "size": [
+        810,
+        430,
+        100,
+        25
+      ],
+      "bg": "white",
+      "text": "tiling rand repeat: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "tiling_rand_repeat_entry": {
+      "size": [
+        915,
+        430,
+        50,
+        25
+      ],
+      "bg": "white",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label3_8": {
+      "size": [
+        965,
+        430,
+        20,
+        25
+      ],
+      "bg": "white",
+      "text": "*",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "label_conv_count1": {
+      "size": [
+        985,
+        430,
+        80,
+        25
+      ],
+      "bg": "white",
+      "text": "1",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "tiling_rand_repeat_ensure_button": {
+      "size": [
+        1010,
+        430,
+        50,
+        25
+      ],
+      "text": "ensure",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label_tiling_rand_total": {
+      "size": [
+        810,
+        460,
+        230,
+        30
+      ],
+      "bg": "white",
+      "text": "generation number: ",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "traj_proc_progress": {
+      "size": [
+        815,
+        490,
+        160,
+        20
+      ]
+    },
+    "traj_proc_label": {
+      "size": [
+        980,
+        490,
+        80,
+        25
+      ],
+      "bg": "white",
+      "text": "generating",
+      "font": [
+        "Times",
+        11
+      ],
+      "anchor": "w"
+    },
+    "traj_gen_button": {
+      "size": [
+        830,
+        530,
+        220,
+        30
+      ],
+      "text": "generate",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "traj_save_button": {
+      "size": [
+        830,
+        570,
+        220,
+        30
+      ],
+      "text": "save",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "label3_9": {
+      "size": [
+        5,
+        520,
+        170,
+        30
+      ],
+      "bg": "white",
+      "text": "Drawing Trajectory Type:",
+      "font": [
+        "Times",
+        12
+      ],
+      "anchor": "w"
+    },
+    "traj_type_optmenu": {
+      "size": [
+        5,
+        570,
+        170,
+        30
+      ],
+      "option": [
+        "Abs Road",
+        "Prox Road",
+        "Abs Rand",
+        "Tiling Rand"
+      ]
+    },
+    "label_cur_traj_num": {
+      "size": [
+        180,
+        560,
+        170,
+        30
+      ],
+      "bg": "white",
+      "text": "Trajectories Number:",
+      "font": [
+        "Times",
+        12
+      ],
+      "anchor": "w"
+    },
+    "label_cur_traj_id": {
+      "size": [
+        180,
+        600,
+        170,
+        30
+      ],
+      "bg": "white",
+      "text": "Cur Trajectory ID:",
+      "font": [
+        "Times",
+        12
+      ],
+      "anchor": "w"
+    },
+    "label_cur_traj_depth": {
+      "size": [
+        180,
+        640,
+        170,
+        30
+      ],
+      "bg": "white",
+      "text": "Cur Trajectory Steps:",
+      "font": [
+        "Times",
+        12
+      ],
+      "anchor": "w"
+    },
+    "preview_canvas": {
+      "size": [
+        0,
+        -90,
+        800,
+        650
+      ],
+      "bg": "white"
+    },
+    "pre_traj_button": {
+      "size": [
+        430,
+        560,
+        80,
+        30
+      ],
+      "text": "previous",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    },
+    "next_traj_button": {
+      "size": [
+        430,
+        600,
+        80,
+        30
+      ],
+      "text": "next",
+      "bg": "white",
+      "state": "Enable",
+      "font": [
+        "Times",
+        12,
+        "bold"
+      ],
+      "anchor": "center"
+    }
+  }
+}

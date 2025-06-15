@@ -1,7 +1,44 @@
+import sys
+
 import ujson
+import matplotlib
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 from tools import *
-import tools.base_math as bmath
+import tools.geometry as geo
+import tools.algebra as alg
+
+from tools.space import PI
+from tools.space.boundary import Boundary
+from tools.space.scene import Scene
+from tools.space.trajectory import Trajectory
+
+
+class DrawType(Enum):
+    Triangle = 0
+    Rectangle = 1
+    Pentagon = 2
+    Hexagon = 3
+    Circle = 4
+    Custom = 5
+
+
+class TrajectoryType(Enum):
+    AbsRoad = 0
+    ProxRoad = 1
+    AbsRand = 2
+    TilingRand = 3
+
+
+def get_files(directory, extension):
+    files = []
+    for root, dirs, filenames in os.walk(directory):
+        for filename in filenames:
+            if filename.endswith('.' + extension):
+                filepath = os.path.join(root, filename)
+                files.append(filepath)
+    return files
 
 
 def load_bound(bound_attr):
@@ -36,82 +73,89 @@ def load_json(j_path):
             return j_result
 
 
-class Scene:
-    def __init__(self):
-        self.name = None
-        self.scene_type = 'vir'
-        self.bounds = []
-        self.max_size = [0, 0]  # w,h
-        self.out_bound_conv = None
-        self.out_conv_hull = None
-        self.scene_center = np.array([0, 0])
+def load_trajectories(tar_path, scene_name):
+    all_traj_files = get_files(tar_path + '\\simu_trajs\\{}'.format(scene_name), 'json')
+    trajs = []
+
+    for t_type, t_tars in list(map(load_trajectory, all_traj_files)):
+        t = Trajectory()
+        t.type = t_type
+        t.tar_data = tuple(t_tars)
+        t.tar_num = len(t_tars)
+        t.end_idx = t.tar_num - 1
+        trajs.append(t)
+    return tuple(trajs)
 
 
-class Boundary:
-    def __init__(self):
-        self.is_out_bound = False
-        self.points = []
-        self.points_num = 0
-        self.center = np.array([0, 0])
-        self.barycenter = []
-        self.cir_rect = []
-        self.orth_cir_rect = []
-
-    def set_contour(self, out_boundary, points):
-        self.is_out_bound = out_boundary
-        self.points = points
-        self.points_num = len(points)
-        self.__calc_surround_rect()
-
-    def clean_repeat(self):
-        need_clean = []
-        for i in range(len(self.points) - 1):
-            for j in range(i + 1, len(self.points)):
-                if bmath.chk_p_same(self.points[i], self.points[j]):
-                    need_clean.append(j)
-        for idx in need_clean:
-            self.points.pop(idx)
-        self.points_num = len(self.points)
-
-    def __calc_surround_rect(self):
-        min_x, min_y = float('inf'), float('inf')
-        max_x, max_y = 0, 0
-        for px, py in self.points:
-            if px <= min_x:
-                min_x = px
-            elif px >= max_x:
-                max_x = px
-            if py <= min_y:
-                min_y = py
-            elif py >= max_y:
-                max_y = py
-        self.orth_cir_rect = [min_x, min_y, max_x, max_y]
-
-    def clone(self):
-        c_bound = Boundary()
-        c_bound.is_out_bound = self.is_out_bound
-        c_bound.points = np.array(self.points).copy().tolist()
-        c_bound.points_num = self.points_num
-        c_bound.center = self.center.copy()
-        c_bound.barycenter = np.array(self.barycenter).copy().tolist()
-        c_bound.cir_rect = np.array(self.cir_rect).copy().tolist()
-        return c_bound
-
-    def print_info(self):
-        info = ''
-        for b in self.points:
-            info += str(b)
-        print("is out bound", self.is_out_bound, "point list:", info)
-        print('center:', self.center, ' barycenter:', self.barycenter)
+def load_trajectory(tar_path):
+    traj_data = load_json(tar_path)
+    traj_type = traj_data['type']
+    traj_tars = traj_data['targets']
+    return traj_type, traj_tars
 
 
-class DrawType(Enum):
-    Triangle = 0
-    Rectangle = 1
-    Pentagon = 2
-    Hexagon = 3
-    Circle = 4
-    Custom = 5
+def save_bound(bound):
+    return {"is_out_bound": bound.is_out_bound,
+            "points": np.array(np.around(bound.points, decimals=4), dtype='float').tolist(),
+            "center": np.array(np.around(bound.center, decimals=4), dtype='float').tolist(),
+            "barycenter": np.array(np.around(bound.barycenter, decimals=4), dtype='float').tolist(),
+            "cir_rect": np.array(np.around(bound.cir_rect, decimals=4), dtype='float').tolist()}
+
+
+def save_convex_poly(convex):
+    return {"vertices": np.array(np.around(convex.vertices, decimals=4), dtype='float').tolist(),
+            "center": np.array(np.around(convex.center, decimals=4), dtype='float').tolist(),
+            "barycenter": np.array(np.around(convex.barycenter, decimals=4), dtype='float').tolist(),
+            "cir_circle": [np.array(np.around(convex.cir_circle[0], decimals=4), dtype='float').tolist(),
+                           float(np.around(convex.cir_circle[1], decimals=4))],
+            "in_circle": [np.array(np.around(convex.in_circle[0], decimals=4), dtype='float').tolist(),
+                          float(np.around(convex.in_circle[1], decimals=4))],
+            "cir_rect": np.array(convex.cir_rect).copy().tolist(),
+            "out_edges": np.array(convex.out_edges).copy().tolist(),
+            "in_edges": np.array(convex.in_edges).copy().tolist()}
+
+
+def save_contours(scene):
+    return {'name': scene.name,
+            'bounds': list(map(save_bound, scene.bounds)),
+            'max_size': np.array(np.around(scene.max_size, decimals=4), dtype='float').tolist(),
+            "out_bound_conv": save_convex_poly(scene.out_bound_conv),
+            "out_conv_hull": save_convex_poly(scene.out_conv_hull),
+            "scene_center": np.array(np.around(scene.scene_center, decimals=4), dtype='float').tolist()}
+
+
+def save_scene(scene, tar_path=None):
+    contour_data = save_contours(scene)
+    # if not os.path.exists(tar_path):
+    #     os.makedirs(tar_path)
+    done = save_json(contour_data, tar_path + '.json'.format(scene.name))
+    return done
+
+
+def save_json(data, file_path=None):
+    with open(file_path, mode='w') as f:
+        ujson.dump(data, f, ensure_ascii=True, indent=2)
+        return True
+
+
+def save_trajectories(tar_path, scene_name, trajs, traj_type='abs_road'):
+    """
+
+    Args:
+        tar_path:
+        scene_name:
+        trajs:
+        traj_type:
+            - abs_road
+            - approx_road
+            - abs_rand
+
+    Returns:
+
+    """
+    tar_path += '\\simu_trajs\\{}'.format(scene_name)
+    for tid, t in enumerate(trajs):
+        p = tar_path + '\\' + traj_type + '{}.json'.format(tid)
 
 
 class BaseWindowUI(tk.Tk):
@@ -171,6 +215,7 @@ class BaseWindowUI(tk.Tk):
 
     def on_closing(self):
         self.destroy()
+        sys.exit()
 
 
 class SceneGenWindowUI(BaseWindowUI):
@@ -178,7 +223,7 @@ class SceneGenWindowUI(BaseWindowUI):
     def __init__(self, ui_spec):
         super().__init__(ui_spec=ui_spec)
         cur_path = os.path.abspath(os.path.dirname(__file__))
-        self.roo_path = cur_path[:cur_path.find('polyspaces') + len('polyspaces')]
+        self.root_path = cur_path[:cur_path.find('pyrdwdata') + len('pyrdwdata')]
         self.phy_draw_type = None
         self.phy_canvas_size = []
         self.phy_canvas_center = []
@@ -268,13 +313,13 @@ class SceneGenWindowUI(BaseWindowUI):
             if cur_num >= 3:
                 for i in range(-1, cur_num - 1):
                     ls, le = self.phy_cur_contour_bounds[i], self.phy_cur_contour_bounds[i + 1]
-                    dis, _, t = bmath.calc_point_pro2line([tar_x, tar_y], ls, le)
+                    dis, _, t = geo.calc_point_pro2line([tar_x, tar_y], ls, le)
                     if 1 > t > 0 and dis <= 0.05:
                         self.phy_cur_contour_bounds.pop(i + 1)
                         break
             elif cur_num == 2:
                 ls, le = self.phy_cur_contour_bounds[0], self.phy_cur_contour_bounds[1]
-                dis, _, t = bmath.calc_point_pro2line([tar_x, tar_y], ls, le)
+                dis, _, t = geo.calc_point_pro2line([tar_x, tar_y], ls, le)
                 if 1 > t > 0 and dis <= 0.05:
                     self.phy_cur_contour_bounds.clear()
         self.refresh_prender()
@@ -289,7 +334,7 @@ class SceneGenWindowUI(BaseWindowUI):
         else:
             if len(self.phy_cur_contour_bounds) >= 3:
                 head_x, head_y = self.phy_cur_contour_bounds[0]
-                if bmath.l2_norm([tar_x - head_x, tar_y - head_y]) <= 0.05:
+                if alg.l2_norm(np.array([tar_x - head_x, tar_y - head_y])) <= 0.05:
                     self.phy_cur_contour_bounds[-1] = [head_x, head_y]  # 精确到小数点后4位即可
                     self.phy_end_contour_button.config(state=tk.NORMAL)
                     self.phy_custom_contour_done = True
@@ -417,7 +462,7 @@ class SceneGenWindowUI(BaseWindowUI):
         self.refresh_prender()
 
     def callback_open_btn(self, event):
-        target_scene_path = filedialog.askopenfilename(title='Open scene', initialdir=self.roo_path,
+        target_scene_path = filedialog.askopenfilename(title='Open scene', initialdir=self.root_path,
                                                        filetypes=[('json', '*.json'), ('All Files', '*')])
 
         s = load_scene(target_scene_path)
@@ -444,9 +489,12 @@ class SceneGenWindowUI(BaseWindowUI):
         self.refresh_prender()
 
     def callback_save_btn(self, event):
+        target_scene_path = filedialog.asksaveasfilename(title='Save scene', initialdir=self.root_path,
+                                                         filetypes=[('json', '*.json'), ('All Files', '*')])
+        name = target_scene_path.split('/')[-1]
         if self.phy_bounds is not None and len(self.phy_bounds) > 0:
-            target_bounds = self.calc_phy_bound_regular()
-            if self.app_config.save_phy_scene(target_bounds):
+            target_scene = self.gen_scene(name)
+            if save_scene(target_scene, target_scene_path):
                 self.destroy()
             else:
                 return
@@ -465,7 +513,7 @@ class SceneGenWindowUI(BaseWindowUI):
         c_h = round(self.phy_canvas_size[1] / self.phy_scale, 2)
         s_w, s_h = round(self.phy_scene_size[0], 1), round(self.phy_scene_size[1], 1)
         if len(self.phy_cur_contour_bounds) > 2:
-            _, s_w, s_h, _ = bmath.calc_poly_min_cir_rect(np.array(self.phy_cur_contour_bounds))
+            _, s_w, s_h, _ = geo.calc_poly_min_cir_rect(np.array(self.phy_cur_contour_bounds))
         yb = self.cur_focus_center[1] - self.phy_canvas_size[1] / self.phy_scale * 0.5
         yc = self.cur_focus_center[1]
         yt = self.cur_focus_center[1] + self.phy_canvas_size[1] / self.phy_scale * 0.5
@@ -503,14 +551,14 @@ class SceneGenWindowUI(BaseWindowUI):
         if self.show_tri:
             if self.phy_bounds[-1] is None or len(self.phy_bounds[-1]) < 1:
                 return
-            tris = bmath.calc_poly_triangulation(self.phy_bounds)  # 求解当前三角剖分结果
+            tris = geo.calc_poly_triangulation(self.phy_bounds)  # 求解当前三角剖分结果
             if len(tris) > 1:
                 inter_polys = []
                 for i in range(len(tris) - 1):
                     for j in range(i + 1, len(tris)):
-                        inter_poly = bmath.calc_con_polys_intersect(tris[i].vertices, tris[i].in_circle,
-                                                                    tris[j].vertices,
-                                                                    tris[j].in_circle)
+                        inter_poly = geo.calc_con_polys_intersect(tris[i].vertices, tris[i].in_circle,
+                                                                  tris[j].vertices,
+                                                                  tris[j].in_circle)
                         if inter_poly is not None:
                             p_pre_contour = []
                             for v in inter_poly:
@@ -604,7 +652,7 @@ class SceneGenWindowUI(BaseWindowUI):
 
     def draw_bound_min_rect(self):
         if len(self.phy_cur_contour_bounds) > 2:
-            rect, s_w, s_h, _ = bmath.calc_poly_min_cir_rect(np.array(self.phy_cur_contour_bounds))
+            rect, s_w, s_h, _ = geo.calc_poly_min_cir_rect(np.array(self.phy_cur_contour_bounds))
             num = len(rect)
             for i in range(-1, num - 1):
                 p1x, p1y = rect[i]
@@ -671,7 +719,7 @@ class SceneGenWindowUI(BaseWindowUI):
             self.phy_cur_contour_bounds.append([x0, 2 * y1 / 3 + y0 / 3])
             self.phy_cur_contour_bounds.append([x0, y1 / 3 + 2 * y0 / 3])
 
-    def calc_phy_bound_regular(self):
+    def gen_scene(self, name):
         temp_bounds = pickle.loads(pickle.dumps(self.phy_bounds))
         if temp_bounds is not None and len(temp_bounds) > 0:
             out_bound = temp_bounds[0]
@@ -686,6 +734,355 @@ class SceneGenWindowUI(BaseWindowUI):
                 for v in pb:
                     v[0] -= x_min
                     v[1] -= y_min
-                    v[0] = round(v[0], 4)
-                    v[1] = round(v[1], 4)
-        return temp_bounds
+                    v[0] = round(v[0], 4) * 100
+                    v[1] = round(v[1], 4) * 100
+        scene = Scene()
+        scene.update_contours(name, temp_bounds)
+        return scene
+
+
+class TrajectoryModPopupUI(BaseWindowUI):
+
+    def __init__(self, ui_spec):
+        super().__init__(ui_spec)
+        self.vir_scene = None
+        self.abs_patch_repeat = 10
+        self.prox_patch_repeat = 10
+        self.abs_rand_repeat = 10
+        self.tiling_rand_repeat = 10
+        self.vir_max_w = 0
+        self.vir_max_h = 0
+        self.recorded_paths_data_x = []
+        self.recorded_paths_data_y = []
+        self.recorded_paths_data_z = []
+        self.wall_x = []
+        self.wall_y = []
+        self.cur_trajs = []
+        self.cur_traj_type = TrajectoryType.AbsRoad.value
+        self.traj_id = 0
+        self.traj_type_opt = []
+        self.drawing_point = 0
+        self.figure = Figure(figsize=(10, 10), dpi=100)
+        self.axes = self.figure.add_subplot(111, projection='3d')
+
+        norm = matplotlib.colors.Normalize(vmin=0, vmax=1)
+        im = matplotlib.cm.ScalarMappable(norm=norm, cmap=matplotlib.cm.jet)
+        self.figure.colorbar(im, ax=self.axes, fraction=0.1, pad=0.15, shrink=0.9, anchor=(0.0, 0.3),
+                             orientation='vertical',
+                             ticks=np.linspace(0, 100, 11), label='walking depth')
+
+    def process_v_scene(self, vir_scene):
+        self.vir_scene = vir_scene
+        self.update_ui()
+        if vir_scene is not None:
+            self.process_scene_data()
+            self.update_scene_drawing()
+            self.traj_id = 0
+            if vir_scene.simu_trajs_abs_road_targets is not None and len(vir_scene.simu_trajs_abs_road_targets) > 0:
+                self.process_traj_data()
+            self.update_drawing(self.traj_id)
+
+    def proc_callback(self):
+        self.title('traj gen')
+        com_spec = self.ui_spec['components']
+        for key in com_spec:
+            c_obj = getattr(self, key)
+            c_spec = com_spec[key]
+            c_loc = c_spec['size']
+            if "button" in key:
+                callback_func = None
+                if 'abs_road_repeat' in key:
+                    callback_func = self.callback_road_repeat_ensure_btn
+                elif 'prox_road_repeat' in key:
+                    callback_func = self.callback_prox_road_repeat_ensure_btn
+                elif 'abs_rand_repeat' in key:
+                    callback_func = self.callback_abs_rand_repeat_ensure_btn
+                elif 'tiling_rand_repeat' in key:
+                    callback_func = self.callback_tiling_rand_repeat_ensure_btn
+                elif 'traj_gen' in key:
+                    callback_func = self.callback_gen_traj_btn
+                    c_obj['text'] = 'generate'
+                elif 'traj_save' in key:
+                    callback_func = self.callback_save_traj_btn
+                elif 'pre_traj' in key:
+                    callback_func = self.callback_previous_btn
+                elif 'next_traj' in key:
+                    callback_func = self.callback_next_btn
+                c_obj.bind("<Button-1>", callback_func)
+            elif 'entry' in key:
+                if 'abs_road_repeat' in key:
+                    c_obj.delete(0, "end")
+                    c_obj.insert(tk.END, str(self.abs_patch_repeat))
+                elif 'prox_road_repeat' in key:
+                    c_obj.delete(0, "end")
+                    c_obj.insert(tk.END, str(self.prox_patch_repeat))
+                elif 'abs_rand_repeat' in key:
+                    c_obj.delete(0, "end")
+                    c_obj.insert(tk.END, str(self.abs_rand_repeat))
+                elif 'tiling_rand_repeat' in key:
+                    c_obj.delete(0, "end")
+                    c_obj.insert(tk.END, str(self.tiling_rand_repeat))
+            elif 'canvas' in key:
+                setattr(self, key, FigureCanvasTkAgg(self.figure, self))
+                c_obj = getattr(self, key)
+                c_obj.get_tk_widget().place(x=c_loc[0], y=c_loc[1], width=c_loc[2], height=c_loc[3])
+                c_obj.get_tk_widget().config(bg='black')
+                c_obj.draw()
+            elif 'optmenu' in key:
+                variable = tk.StringVar()
+                variable.set(c_spec["option"][0])
+                self.traj_type_opt = c_spec["option"]
+                callback_func = None
+                if 'traj_type' in key:
+                    callback_func = self.callback_draw_canvas_type_select
+
+                setattr(self, key, tk.OptionMenu(self, variable, *c_spec["option"], command=callback_func))
+                getattr(self, key).place(x=c_loc[0], y=c_loc[1], width=c_loc[2], height=c_loc[3])
+
+    def update_ui(self):
+        v_scene = self.vir_scene
+        if v_scene is not None:
+            self.label_name.configure(text='name: ' + v_scene.name)
+            self.label_patch.configure(text='patches: {}'.format(len(v_scene.patches)))
+            self.label_node.configure(text='nodes: {}'.format(len(v_scene.nodes)))
+            self.label_conv.configure(text='convs: {}'.format(len(v_scene.conv_polys)))
+            road_traj_num = len(v_scene.simu_trajs_abs_road_targets) + len(v_scene.simu_trajs_prox_road_targets)
+            self.label_follow_patch.configure(text='trajectories road-targets: {}'.format(road_traj_num))
+            rand_traj_num = len(v_scene.simu_trajs_abs_rand_targets) + len(v_scene.simu_trajs_tiling_rand_targets)
+            self.label_follow_random.configure(text='trajectories random-targets: {}'.format(rand_traj_num))
+            self.abs_road_repeat_entry.delete(0, "end")
+            self.abs_road_repeat_entry.insert(tk.END, str(self.abs_patch_repeat))
+            self.label_patch_count.configure(text='{}'.format(len(v_scene.patches)))
+            total_road_traj = self.abs_patch_repeat * len(v_scene.patches)
+            self.label_abs_road_total.configure(text='generation number: {}'.format(total_road_traj))
+            self.prox_road_repeat_entry.delete(0, "end")
+            self.prox_road_repeat_entry.insert(tk.END, str(self.prox_patch_repeat))
+            self.label_patch_count1.configure(text='{}'.format(len(v_scene.patches)))
+            total_road_traj = self.prox_patch_repeat * len(v_scene.patches)
+            self.label_prox_road_total.configure(text='generation number: {}'.format(total_road_traj))
+            self.abs_rand_repeat_entry.delete(0, "end")
+            self.abs_rand_repeat_entry.insert(tk.END, str(self.abs_rand_repeat))
+            self.label_conv_count.configure(text='{}'.format(len(v_scene.conv_polys)))
+            total_rand_traj = self.abs_rand_repeat * len(v_scene.conv_polys)
+            self.label_rand_total.configure(text='generation number: {}'.format(total_rand_traj))
+            self.tiling_rand_repeat_entry.delete(0, "end")
+            self.tiling_rand_repeat_entry.insert(tk.END, str(self.tiling_rand_repeat))
+            self.label_conv_count1.configure(text='{}'.format(len(v_scene.conv_polys)))
+            total_rand_traj = self.tiling_rand_repeat * len(v_scene.conv_polys)
+            self.label_tiling_rand_total.configure(text='generation number: {}'.format(total_rand_traj))
+        else:
+            self.label_abs_road_total.configure(text='generation repeat: {}'.format(self.abs_patch_repeat))
+            self.label_prox_road_total.configure(text='generation repeat: {}'.format(self.prox_patch_repeat))
+            self.label_rand_total.configure(text='generation repeat: {}'.format(self.abs_rand_repeat))
+            self.label_tiling_rand_total.configure(text='generation repeat: {}'.format(self.tiling_rand_repeat))
+
+    def process_scene_data(self):
+        self.wall_x = []
+        self.wall_y = []
+        for bound in self.vir_scene.bounds:
+            wall_points_x = [0.0 for _ in range(len(bound.points))]
+            wall_points_y = [0.0 for _ in range(len(bound.points))]
+            for j in range(-1, len(bound.points) - 1):
+                wall_points_x[j] = bound.points[j][0]
+                wall_points_y[j] = bound.points[j][1]
+            self.wall_x.append(wall_points_x)
+            self.wall_y.append(wall_points_y)
+        self.vir_max_w, self.vir_max_h = self.vir_scene.max_size
+
+    def process_traj_data(self):
+        vir_scene = self.vir_scene
+        if self.cur_traj_type == TrajectoryType.AbsRoad.value:
+            self.cur_trajs = vir_scene.simu_trajs_abs_road_targets
+        elif self.cur_traj_type == TrajectoryType.ProxRoad.value:
+            self.cur_trajs = vir_scene.simu_trajs_prox_road_targets
+        elif self.cur_traj_type == TrajectoryType.AbsRand.value:
+            self.cur_trajs = vir_scene.simu_trajs_abs_rand_targets
+        elif self.cur_traj_type == TrajectoryType.TilingRand.value:
+            self.cur_trajs = vir_scene.simu_trajs_tiling_rand_targets
+        self.recorded_paths_data_x, self.recorded_paths_data_y, self.recorded_paths_data_z = [], [], []
+        for traj in self.cur_trajs:
+            x_seq, y_seq, z_seq = [], [], []
+            for i in range(len(traj)):
+                x, y, z = traj[i]
+                x_seq.append(x)
+                y_seq.append(y)
+                z_seq.append(z)
+            self.recorded_paths_data_x.append(x_seq)
+            self.recorded_paths_data_y.append(y_seq)
+            self.recorded_paths_data_z.append(z_seq)
+        self.label_cur_traj_num.configure(text='Trajectories Number: {}'.format(len(self.cur_trajs)))
+
+    def update_traj_display(self):
+        if len(self.cur_trajs) > 0:
+            self.update_drawing(self.traj_id)
+            self.label_cur_traj_id.configure(text='Cur Trajectory id: {}'.format(self.traj_id))
+            self.label_cur_traj_depth.configure(
+                text='Cur Trajectory Steps: {}'.format(len(self.cur_trajs[self.traj_id])))
+
+    def generate_v_trajs(self):
+        vir_scene = self.vir_scene
+        self.traj_proc_label.configure(text='generating')
+        vir_scene.gen_simu_road_trajs(self.abs_patch_repeat, prox=False, dis_ang=20)
+        self.traj_proc_progress['value'] = 25
+        self.window.update()
+        vir_scene.gen_simu_road_trajs(self.prox_patch_repeat, prox=True, dis_ang=20)
+        self.traj_proc_progress['value'] = 50
+        self.window.update()
+        vir_scene.gen_simu_abs_rand_trajs(self.abs_rand_repeat, walk_range=[0.2, 0.4], rot_range=[0, PI])
+        self.traj_proc_progress['value'] = 75
+        self.window.update()
+        vir_scene.gen_simu_tiling_rand_trajs(self.tiling_rand_repeat)
+        self.traj_proc_progress['value'] = 100
+        self.window.update()
+        self.cur_traj_type = TrajectoryType.AbsRoad.value
+        self.process_traj_data()
+        self.traj_id = 0
+        self.update_traj_display()
+        self.traj_proc_label.configure(text='done')
+
+    def save_v_trajs(self):
+        vir_scene = self.vir_scene
+        abs_road_trajs = vir_scene.simu_trajs_abs_road_targets
+        prox_road_trajs = vir_scene.simu_trajs_prox_road_targets
+        abs_rand_trajs = vir_scene.simu_trajs_abs_rand_targets
+        tiling_rand_trajs = vir_scene.simu_trajs_tiling_rand_targets
+        self.app_config.create_trajectory_save_path()
+        self.traj_proc_label.configure(text='saving')
+        self.app_config.save_recorded_vir_trajectory(abs_road_trajs, 'abs_road')
+        self.traj_proc_progress['value'] = 25
+        self.window.update()
+        self.app_config.save_recorded_vir_trajectory(prox_road_trajs, 'prox_road')
+        self.traj_proc_progress['value'] = 50
+        self.window.update()
+        self.app_config.save_recorded_vir_trajectory(abs_rand_trajs, 'abs_rand')
+        self.traj_proc_progress['value'] = 75
+        self.window.update()
+        self.app_config.save_recorded_vir_trajectory(tiling_rand_trajs, 'tiling_rand')
+        self.traj_proc_progress['value'] = 100
+        self.window.update()
+        self.traj_proc_label.configure(text='done')
+
+    def callback_road_repeat_ensure_btn(self, event):
+        self.abs_patch_repeat = int(self.abs_road_repeat_entry.get())
+
+        total_road_traj = self.abs_patch_repeat * len(self.env_mg.env.vir_scene.patches)
+        self.label_abs_road_total.configure(text='generation number: {}'.format(total_road_traj))
+
+    def callback_prox_road_repeat_ensure_btn(self, event):
+        self.prox_patch_repeat = int(self.prox_road_repeat_entry.get())
+
+        total_road_traj = self.prox_patch_repeat * len(self.env_mg.env.vir_scene.patches)
+        self.label_prox_road_total.configure(text='generation number: {}'.format(total_road_traj))
+
+    def callback_abs_rand_repeat_ensure_btn(self, event):
+        self.abs_rand_repeat = int(self.abs_rand_repeat_entry.get())
+
+        total_rand_traj = self.abs_rand_repeat * len(self.env_mg.env.vir_scene.conv_polys)
+        self.label_rand_total.configure(text='generation number: {}'.format(total_rand_traj))
+
+    def callback_tiling_rand_repeat_ensure_btn(self, event):
+        self.tiling_rand_repeat = int(self.tiling_rand_repeat_entry.get())
+
+        total_rand_traj = self.tiling_rand_repeat * len(self.env_mg.env.vir_scene.conv_polys)
+        self.label_tiling_rand_total.configure(text='generation number: {}'.format(total_rand_traj))
+
+    def callback_gen_traj_btn(self, event):
+        self.generate_v_trajs()
+
+    def callback_save_traj_btn(self, event):
+        self.save_v_trajs()
+
+    def callback_batch_proc_btn(self, event):
+        v_scene_list = self.app_config.vir_all_scene_names
+        for v_file_name in v_scene_list:
+            v_name = v_file_name.split(".")[0]
+            s_type = 'vir'
+            xml_tree, scene_name = self.app_config.load_scene_spec(v_name, s_type)
+            done, scene = self.app_config.load_scene_attr(scene_name, s_type)
+            if not done:
+                self.env_mg.gen_scene(scene_name, xml_tree, s_type)
+                self.env_mg.gen_roadmap(xml_tree, s_type)
+                self.env_mg.gen_patches(s_type)
+                self.env_mg.gen_scene_segmentation(s_type)
+                self.env_mg.gen_scene_tilings(s_type)
+                self.env_mg.gen_scene_tilings_weights(s_type)
+            else:
+                self.env_mg.set_scene(scene, s_type)
+                self.env_mg.gen_roadmap(xml_tree, s_type)
+                self.env_mg.gen_patches(s_type)
+                self.env_mg.gen_scene_tilings_weights(s_type)
+            self.update_ui()
+            self.update_scene_drawing()
+            self.generate_v_trajs()
+            self.save_v_trajs()
+
+    def callback_draw_canvas_type_select(self, value):
+        if value == self.traj_type_opt[0]:
+            self.cur_traj_type = TrajectoryType.AbsRoad.value
+        elif value == self.traj_type_opt[1]:
+            self.cur_traj_type = TrajectoryType.ProxRoad.value
+        elif value == self.traj_type_opt[2]:
+            self.cur_traj_type = TrajectoryType.AbsRand.value
+        elif value == self.traj_type_opt[3]:
+            self.cur_traj_type = TrajectoryType.TilingRand.value
+        self.process_traj_data()
+        self.traj_id = 0
+        self.update_traj_display()
+
+    def callback_next_btn(self, event):
+        self.traj_id += 1
+        self.traj_id %= len(self.cur_trajs)
+        self.update_traj_display()
+
+    def callback_previous_btn(self, event):
+        self.traj_id -= 1
+        if self.traj_id < 0:
+            self.traj_id = 0
+        self.update_traj_display()
+
+    def update_drawing(self, traj_id):
+        if len(self.cur_trajs) > 0:
+            x = self.recorded_paths_data_x[traj_id]
+            y = self.recorded_paths_data_y[traj_id]
+            z = self.recorded_paths_data_z[traj_id]
+            nx = np.array(x)
+            ny = np.array(y)
+            nz = np.array(z)  # np.expand_dims(z, axis=0)
+
+            self.axes.clear()
+            w = max(int(self.vir_max_w) + 1, int(self.vir_max_h) + 1)
+            self.axes.set_xlim(0, w)
+            self.axes.set_ylim(0, w)
+            self.axes.set_zlim(0, math.ceil(z[-1]))
+            self.axes.set_xlabel('x')
+            self.axes.set_ylabel('y')
+            self.axes.set_zlabel('time')
+            for i in range(len(self.wall_x)):
+                b_x = np.array(self.wall_x[i] + [self.wall_x[i][0]])
+                b_y = np.array(self.wall_y[i] + [self.wall_y[i][0]])
+                b_z = np.zeros(len(b_x))
+                self.axes.plot(b_x, b_y, b_z, color='black')
+            # 设定每个图的color map和color bar所表示范围是一样的，即归一化
+            norm = matplotlib.colors.Normalize(vmin=nz.min(), vmax=nz.max())
+            z_colors = []
+            for i in range(len(nz)):
+                z_colors.append(matplotlib.cm.jet(int(norm(255 * nz[i]))))
+            for i in range(len(nz) - 1):
+                self.axes.plot(nx[i:i + 2], ny[i:i + 2], nz[i:i + 2], color=z_colors[i])
+            self.figure.canvas.draw()
+
+    def update_scene_drawing(self):
+        self.axes.clear()
+        w = max(int(self.vir_max_w) + 1, int(self.vir_max_h) + 1)
+        self.axes.set_xlim(0, w)
+        self.axes.set_ylim(0, w)
+        self.axes.set_zlim(0, 100)
+        self.axes.set_xlabel('x-value')
+        self.axes.set_ylabel('y-value')
+        self.axes.set_zlabel('time-horizon')
+        for i in range(len(self.wall_x)):
+            b_x = np.array(self.wall_x[i] + [self.wall_x[i][0]])
+            b_y = np.array(self.wall_y[i] + [self.wall_y[i][0]])
+            b_z = np.zeros(len(b_x))
+            self.axes.plot(b_x, b_y, b_z, color='black')
+        self.figure.canvas.draw()
